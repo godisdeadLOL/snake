@@ -1,4 +1,4 @@
-import{n as oe,u as I,a as ne,h as U,k as ie,m as se,o as D,w as ae}from"./index-CPD2pglN.js";const $=Object.create(null),L=Object.create(null);function O(o,e){let t=L[o];return t===void 0&&($[e]===void 0&&($[e]=1),L[o]=t=$[e]++),t}let S;function ue(){if(!S){S="mediump";const o=oe();o&&o.getShaderPrecisionFormat&&(S=o.getShaderPrecisionFormat(o.FRAGMENT_SHADER,o.HIGH_FLOAT).precision?"highp":"mediump")}return S}function ce(o,e,t){return e?o:t?(o=o.replace("out vec4 finalColor;",""),`
+import{n as oe,u as I,a as ne,h as U,k as ie,m as se,o as D,w as ae}from"./index-DwBKUnu1.js";const $=Object.create(null),L=Object.create(null);function O(o,e){let t=L[o];return t===void 0&&($[e]===void 0&&($[e]=1),L[o]=t=$[e]++),t}let S;function ue(){if(!S){S="mediump";const o=oe();o&&o.getShaderPrecisionFormat&&(S=o.getShaderPrecisionFormat(o.FRAGMENT_SHADER,o.HIGH_FLOAT).precision?"highp":"mediump")}return S}function ce(o,e,t){return e?o:t?(o=o.replace("out vec4 finalColor;",""),`
         
         #ifdef GL_ES // This checks if it is WebGL1
         #define in varying
