@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+
+		<style>
+			/* @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"); */
+
+			@font-face {
+				font-family: "Miracode";
+				src: url("/Miracode.ttf");
+			}
+
+			html {
+				overflow: hidden-x;
+			}
+			body {
+				background-color: #1f253d;
+				padding: 0px;
+				margin: 0px;
+
+				overflow: hidden-x;
+
+				font-family: "Miracode";
+				color: #fff;
+				font-size: 16px;
+			}
+
+			canvas {
+				max-width: 100%;
+				border-radius: 16px;
+				max-height: 512px;
+			}
+
+			#play_button:hover {
+				cursor: pointer;
+				user-select: none;
+				color: yellow;
+			}
+
+			#canvas_wrapper {
+				padding-top: 64px;
+				padding-bottom: 64px;
+				min-height: 100dvh;
+				box-sizing: border-box;
+
+				padding-left: 16px;
+				padding-right: 16px;
+			}
+
+			#joystick_body {
+				pointer-events: none;
+
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 128px;
+				height: 128px;
+				border-radius: 100%;
+				border: solid #ffffff 2px;
+				transform: translate(-50%, -50%);
+				display: none;
+			}
+
+			#joystick_handle_wrapper {
+				/* pointer-events: none; */
+
+				position: relative;
+				left: 50%;
+				top: 50%;
+			}
+
+			#joystick_handle {
+				/* pointer-events: none; */
+
+				position: relative;
+				width: 32px;
+				height: 32px;
+				border-radius: 100%;
+				border: solid #ffffff 2px;
+				transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body>
+		<script type="module" src="src/main.ts"></script>
+
+		<div style="z-index: 10; position: absolute; left: 0; right: 0; padding: 16px; display: flex; gap: 16px">
+			<div id="play_button">Press to Start</div>
+			<div style="margin-left: auto">Score: <span id="score_value"> 0 </span></div>
+			<div>Highscore: <span id="highscore_value">0</span></div>
+		</div>
+
+		<div style="overflow: hidden; position: relative">
+			<div id="joystick_body">
+				<div id="joystick_handle_wrapper"><div id="joystick_handle"></div></div>
+			</div>
+
+			<div id="canvas_wrapper" style="display: flex; justify-content: center; align-items: center; touch-action: none">
+				<div id="content"></div>
+			</div>
+		</div>
+	</body>
+</html>
