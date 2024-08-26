@@ -144,7 +144,7 @@ class Snake {
 			const { is_overlap, offset } = this.head.collide(other)
 
 			if (is_overlap) {
-				offset.multiplyScalar(delta * this.speed)
+				// offset.multiplyScalar(delta)
 				this.head.position.add(offset)
 				// this.head.radiusMod = -10
 				// this.target.add(offset)
@@ -156,10 +156,10 @@ class Snake {
 		if (is_overlap) {
 			// this.impulse.push(offset.clone().normalize(), 300)
 
-			offset.multiplyScalar(delta * this.speed)
+			// offset.multiplyScalar(delta * this.speed * 0.5)
 			this.head.position.add(offset)
 
-			this.head.radiusMod = Math.max(0, this.head.radiusMod - 1)
+			// this.head.radiusMod = Math.max(0, this.head.radiusMod - 1)
 
 			// this.head.direction.add( offset.normalize() ).normalize()
 		}
