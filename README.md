@@ -13,7 +13,7 @@
 - 📈 Сохранение рекорда в LocalStorage
 - 📱 Поддержка мобильных устройств
 
-## 🔧 Запуск
+## 🚀 Запуск
 ```bash
 git clone https://github.com/godisdeadLOL/snake.git
 cd snake
@@ -21,11 +21,8 @@ npm install
 npm run dev
 ```
 
-## 🧱 Технологии
+## 🛠 Технологии
 - 🔧 TypeScript
 - 🎮 PixiJS
 - 🧮 Victor.js
 - 📦 Vite
-
-## 🧑‍💻 Автор
-я
